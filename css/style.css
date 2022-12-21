@@ -144,21 +144,15 @@ body {
     background-position: center;
 }
 
-.section-subtitle.\:dark { color: var(--white);}
+.section-subtitle.\:dark { color: var(--white); }
 
-.section-subtitle.\:dark::before {
-    background-image: url('../img/text-bars-light.png');
-}
+.section-subtitle.\:dark::before { background-image: url('../img/text-bars-light.png'); }
 
-.section-subtitle.\:light { color: var(--international-orange-engineering);}
+.section-subtitle.\:light { color: var(--international-orange-engineering); }
 
-.section-subtitle.\:ligth::before {
-    background-image: url('../img/text-bars-dark.png');
-}
+.section-subtitle.\:light::before { background-image: url('../img/text-bars-dark.png'); }
 
-.section-title {
-    text-align: center;
-}
+.section-title { text-align: center; }
 
 .h1,
 .h2,
@@ -217,4 +211,13 @@ body {
 @keyframes moving {
     0% { transform: translateY(0);}
     100% { transform: translateY(10px);}
+}
+
+.section { padding-block: var(--section-padding);}
+
+.btn-link {
+    font-family: var(--ff-chakra-petch);
+    text-transform: uppercase;
+    color: var(--international-orange-engineering);
+    font-weight: var(--fw-700);
 }
