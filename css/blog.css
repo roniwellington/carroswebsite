@@ -1,60 +1,38 @@
-html {
-    box-sizing: border-box;
-  }
-  
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
+.work .container { padding-inline: 0;}
 
-  .blog{
-    margin: 20px;
-  }
-  
-  .column {
-    float: left;
-    width: 25%;
-    margin-bottom: 16px;
-    padding: 0 8px;
-  }
-  
-  @media screen and (max-width: 650px) {
-    .column {
-      width: 100%;
-      display: block;
-    }
-  }
-  
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  }
-  
-  .container {
-    padding: 0 16px;
-  }
-  
-  .container::after, .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  .title {
-    color: grey;
-  }
-  
-  .button-blog {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: green;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    margin: 15px 0;
-  }
-  
-  .button-blog:hover {
-    background-color: #555;
-  }
+.work .section-title { margin-block-end: 24px;}
+
+.work-card { position: relative;}
+
+.work-card .card-content {
+  background-color: var(--white);
+  max-width: 90%;
+  padding: 30px 10px;
+  margin-block-start: -60px;
+  margin-inline: auto;
+  position: relative;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+.work-card .card-subtitle {
+  font-family: var(--ff-chakra-petch);
+  text-transform: uppercase;
+  color: var(--international-orange-engineering);
+  font-weight: var(--fw-700);
+  margin-block-end: 5px;
+}
+
+.work-card .card-title { margin-block-end: 10px;}
+
+.work-card .card-btn {
+  background-color: var(--international-orange-engineering);
+  color: var(--white);
+  font-size: 2rem;
+  margin-inline: auto;
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius-circle);
+}
