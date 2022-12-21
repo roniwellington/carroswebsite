@@ -1,0 +1,36 @@
+/*hero*/
+.hero {
+  position: relative;
+  padding-block-start: calc(var(--section-padding) + 70px);
+  text-align: center;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.hero .container {
+  display: grid;
+  gap: 30px;
+}
+
+.hero .section-subtitle {
+  text-transform: unset;
+}
+
+.hero .section-text {
+  color: var(--white);
+  margin-block: 14px 18px;
+}
+
+.hero .btn { margin-inline: auto;}
+
+.hero-banner {
+  aspect-ratio: var(--width) / var(--height);
+}
+
+.hero-banner img  {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 90%;
+
+}
